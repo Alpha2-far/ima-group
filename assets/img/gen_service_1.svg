@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="550" viewBox="0 0 800 550">
+  <rect width="800" height="550" fill="#11103A"/>
+  <rect x="0" y="0" width="800" height="4" fill="#F2A900" opacity="0.7"/>
+  <!-- tableau de bord comptable stylisé -->
+  <rect x="80" y="80" width="640" height="390" rx="0" fill="#1A1960" opacity="0.6"/>
+  <rect x="100" y="100" width="180" height="120" rx="0" fill="#FAFAF8" opacity="0.05"/>
+  <rect x="300" y="100" width="180" height="120" rx="0" fill="#FAFAF8" opacity="0.05"/>
+  <rect x="500" y="100" width="180" height="120" rx="0" fill="#FAFAF8" opacity="0.05"/>
+  <!-- barres graphique -->
+  <rect x="120" y="280" width="30" height="140" fill="#F2A900" opacity="0.5"/>
+  <rect x="165" y="230" width="30" height="190" fill="#F2A900" opacity="0.7"/>
+  <rect x="210" y="260" width="30" height="160" fill="#F2A900" opacity="0.4"/>
+  <rect x="255" y="200" width="30" height="220" fill="#F2A900" opacity="0.85"/>
+  <rect x="300" y="240" width="30" height="180" fill="#F2A900" opacity="0.55"/>
+  <!-- ligne de tendance -->
+  <polyline points="120,280 165,230 210,260 255,200 300,240 345,210 390,190 435,220" fill="none" stroke="#F2A900" stroke-width="2" opacity="0.8"/>
+  <text x="400" y="490" fill="#FAFAF8" font-family="Inter,Arial" font-size="13" font-weight="500" text-anchor="middle" opacity="0.5">Comptabilite, Fiscalite &amp; Gestion Financiere</text>
+</svg>
