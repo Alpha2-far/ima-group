@@ -241,29 +241,29 @@ section{position:relative}
 @media(max-width:960px){.serv-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.serv-grid{grid-template-columns:1fr}}
 
-/* ===== DOMAINE DETAILLE (page services.html) ===== */
-.domain-section{padding-block:clamp(56px,7vw,92px);border-bottom:1px solid var(--line)}
-.domain-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:clamp(40px,5vw,80px);align-items:stretch}
-.domain-aside{display:flex;flex-direction:column}
-.domain-num{font-size:clamp(40px,5vw,60px);font-weight:800;line-height:1;letter-spacing:-.03em;color:var(--accent);opacity:.2;margin-bottom:12px}
-.domain-aside .eyebrow{margin-bottom:14px}
-.domain-aside h2{margin-bottom:14px;max-width:18ch}
-.domain-aside p{color:var(--muted);max-width:46ch;margin-bottom:24px}
-/* image en bas de la colonne gauche, remplit l'espace -> colonnes équilibrées */
-.domain-thumb{aspect-ratio:16/10;overflow:hidden;margin-bottom:24px;background:var(--navy);margin-top:auto}
-.domain-thumb img{width:100%;height:100%;object-fit:cover;display:block}
-.domain-aside .btn{align-self:flex-start}
-/* check-list : 2 colonnes, centrée verticalement face à la colonne gauche */
-.domain-list{display:flex;flex-direction:column;justify-content:center}
-.prestations-full{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:0 36px}
-.prestations-full li{font-size:14.5px;color:var(--ink);padding:14px 2px;border-top:1px solid var(--line);display:flex;gap:12px;align-items:flex-start;line-height:1.5}
-.prestations-full li::before{content:"";flex:0 0 auto;width:6px;height:6px;margin-top:8px;background:var(--accent);border-radius:50%}
+/* ===== DOMAINE DETAILLE (page services.html) : image | intro+liste+CTA ===== */
+.domain-section{padding-block:clamp(48px,7vw,88px);border-bottom:1px solid var(--line)}
+.domain-grid{display:grid;grid-template-columns:0.85fr 1.15fr;gap:clamp(36px,5vw,72px);align-items:stretch}
+.domain-media{align-self:stretch;overflow:hidden;background:var(--navy)}
+.domain-media img{width:100%;height:100%;min-height:300px;max-height:460px;object-fit:cover;display:block}
+/* image a droite un bloc sur deux (alternance) */
+.domain-section:nth-of-type(even) .domain-media{order:2}
+.domain-body{display:flex;flex-direction:column}
+.domain-num{font-size:clamp(36px,5vw,56px);font-weight:800;line-height:1;letter-spacing:-.03em;color:var(--accent);opacity:.2;margin-bottom:10px}
+.domain-body .eyebrow{margin-bottom:12px}
+.domain-body h2{margin-bottom:14px;max-width:20ch}
+.domain-body p{color:var(--muted);max-width:54ch;margin-bottom:24px}
+.prestations-full{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:0 32px;margin-bottom:26px}
+.prestations-full li{font-size:14px;color:var(--ink);padding:12px 2px;border-top:1px solid var(--line);display:flex;gap:11px;align-items:flex-start;line-height:1.5}
+.prestations-full li::before{content:"";flex:0 0 auto;width:6px;height:6px;margin-top:7px;background:var(--accent);border-radius:50%}
+.domain-body .btn{align-self:flex-start;margin-top:auto}
 @media(max-width:860px){
-  .domain-grid{grid-template-columns:1fr;gap:30px}
-  .domain-thumb{margin-top:8px}
-  .prestations-full{grid-template-columns:1fr 1fr}
+  .domain-grid{grid-template-columns:1fr;gap:22px}
+  .domain-section:nth-of-type(even) .domain-media{order:0}   /* image toujours en haut sur mobile */
+  .domain-media img{min-height:200px;max-height:280px}
+  .prestations-full{grid-template-columns:1fr;margin-bottom:20px}
+  .domain-body .btn{align-self:stretch;justify-content:center;margin-top:6px}
 }
-@media(max-width:520px){.prestations-full{grid-template-columns:1fr}}
 
 /* ============================== APPROCHE (STEPS) ============================== */
 .steps{background:var(--navy);color:#fff}
