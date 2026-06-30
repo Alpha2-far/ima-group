@@ -261,7 +261,7 @@ section{position:relative}
   .domain-section:nth-of-type(even) .domain-media{order:0}   /* image toujours en haut sur mobile */
   .domain-media img{min-height:200px;max-height:280px}
   .prestations-full{grid-template-columns:1fr;margin-bottom:20px}
-  .domain-body .btn{align-self:stretch;justify-content:center;margin-top:6px}
+  .domain-body .btn{align-self:center;margin-top:10px}
 }
 
 /* ============================== APPROCHE (STEPS) ============================== */
